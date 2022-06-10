@@ -293,3 +293,15 @@ Products
     width: 426px;
     height: 231px;
 }
+
+.contactText {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+}
+
+.noUnderline {
+    text-decoration-line: none;
+}
