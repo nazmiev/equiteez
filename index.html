@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+    <title>Webstripe</title>
+
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/index.css" />
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet" />
-
-    <title>Webstripe</title>
-
 </head>
 
 <body>
@@ -47,13 +47,13 @@
                             <a class="nav-link" href="#Products">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Digitize Your Business</a>
+                            <a class="nav-link" href="#Digitize">Digitize Your Business</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
+                            <a class="nav-link" href="#Blog">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
+                            <a class="nav-link" href="#Contact">Contact Us</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav flex-row flex-wrap social">
@@ -101,11 +101,9 @@
                 col-10 col-md-6 text-center text-md-start ">
                         Equiteez is on a mission to make private equity easily accesible<br>to all investors
                     </div>
-                    <div class="col-10 col-sm-8 col-md-4 col-lg-3
-                m-auto m-md-0 pt-md-3">
-                        <button type="button" class="btn btn-dark h8 w-100">
-                            Singnup For Free
-                        </button>
+                    <div class="col-10 col-sm-8 col-md-4 col-lg-3 m-auto m-md-0 pt-md-3">
+                          <button type="button" class="btn h8 w-100 singnup" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                            Singnup For Free </button>
                     </div>
                 </div>
             </div>
@@ -172,7 +170,7 @@
                         <input type="email" class="form-control" id="exampleInputPassword1" placeholder="E-mail">
                     </div>
                     <div class="col-12 col-sm-4 col-md-3">
-                        <button type="submit" class="btn btn-primary border w-100">
+                        <button type="submit" class="btn w-100">
                             Get Early Access
                         </button>
                     </div>
@@ -214,7 +212,7 @@
                     </div>
 
                     <div class="marketplace mt-3 mb-3">
-                        <h2 class="text-center text-success">
+                        <h2 class="text-center" style="color: #2ECC71;">
                             Marketplace
                         </h2>
                         <div class="h7 w-100 text-center">
@@ -229,6 +227,7 @@
         </div>
     </div>
     <!-- диагональ -->
+    <a id="Digitize"></a>
     <div class="container-fluid" style="background: rgba(229, 229, 229, 0.31);">
         <div class="row">
             <div class="col"
@@ -236,6 +235,7 @@
             </div>
         </div>
 
+        
         <h2 class="text-center pb-4">Digitize Your Business</h2>
         <!-- плитка -->
         <div class="d-flex justify-content-center m-auto flex-wrap" style="max-width: 1324px; gap: 20px;">
@@ -332,6 +332,7 @@
 
     </div>
     <!-- блог -->
+    <a id="Blog"></a>
     <h2 class="text-center">Blog</h2>
 
     <div class="d-flex justify-content-center m-auto flex-wrap" style="max-width: 1324px; gap: 20px;">
@@ -362,20 +363,20 @@
         </div>
     </div>
     <!-- кнопка -->
-    <div class="d-flex justify-content-center pt-2 pb-4">
-        <button type="submit" class="btn btn-outline-success btn-lg btn-border-width-lg">
+    <div class="d-flex justify-content-center pt-4 pb-4">
+        <button type="submit" class="btn news btn-lg">
             View all news
         </button>
     </div>
     <!-- форма -->
-
+    <a id="Contact"></a>
     <div class="container-fluid py-5" style="background: rgba(229, 229, 229, 0.31);">
         <div class="row justify-content-center m-auto flex-wrap" style="max-width: 1324px;">
             <div class="col-lg-6 d-flex align-items-center pb-5">
                 <div>
                     <h2 class="fs-1 fw-bold">Contact Us</h2><br>
                     For inquiries regarding events, projects,<br>collaborations, or general information.<br>
-                    <span class="text-success">info@equiteez.com</span>
+                    <span style="color: #2ECC71;">info@equiteez.com</span>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -404,7 +405,7 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-md-end pt-2 pb-4">
-                    <button type="submit" class="btn btn-dark btn-lg w-25">
+                    <button type="submit" class="btn send w-25">
                         Send
                     </button>
                 </div>
@@ -474,10 +475,85 @@
         </div>
     </div>
 
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="d-flex modal-header text-center justify-content-center">
+                    
+                <h5 class="modal-title text-dark" id="exampleModalLabel">Singnup For Free</h5>
+                
+            </div>
+            <div class="modal-body">
+                <div class="row mb-2">
+                    <div class="col-sm-3">
+                        <label for="colFormLabelLg"
+                            class="col-sm-2 col-form-label col-form-label-lg text-dark">Name</label>
+                    </div>
+                    <div class="col-sm-9">
+                        <input type="email" class="form-control form-control-lg"
+                            id="colFormLabelLg">
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-sm-3">
+                        <label for="colFormLabelLg"
+                            class="col-sm-2 col-form-label col-form-label-lg text-dark">Company</label>
+                    </div>
+                    <div class="col-sm-9">
+                        <input type="email" class="form-control form-control-lg"
+                            id="colFormLabelLg">
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-sm-3">
+                        <label for="colFormLabelLg"
+                            class=" col-form-label col-form-label-lg text-dark">E-mail*</label>
+                    </div>
+                    <div class="col-sm-9">
+                        <input type="email" class="form-control form-control-lg"
+                            id="colFormLabelLg">
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-sm-3"><label for="colFormLabelLg"
+                            class="col-sm-2 col-form-label col-form-label-lg text-dark">Message*</label>
+                    </div>
+                    <div class="col-sm-9">
+                        <textarea class="form-control" id="floatingTextarea2"
+                            style="height: 100px"></textarea>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-md-end pt-2 pb-2">
+                    <button type="submit" class="btn send w-25" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                        Send
+                    </button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            
+            <div class="modal-body text-dark p-5">
+                Successfully! We will send early access soon.
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    <!-- <style>
+        .modal-backdrop {
+            z-index: 0;
+        }
+    </style> -->
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+            
         </script>
+
 </body>
 
 </html>

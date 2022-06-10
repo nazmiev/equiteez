@@ -187,14 +187,61 @@ What Are Digital Securities?
 }
 
 .email-form input {
-    height: 47px;
+    /* height: 47px; */
+    height: 3rem;
     border-radius: 10px;
 }
 
 .email-form button {
-    height: 47px;
+    /* height: 47px; */
+    height: 3rem;
     background-color: #2ECC71;
     border-radius: 10px;
+    color: white;
+}
+
+.email-form button:hover {
+    background-color: white;
+    color: #2ECC71;
+    border: 2px #2ECC71 solid;
+}
+
+.singnup {
+    background-color: #252525;
+    color: white;
+}
+
+.singnup:hover {
+    background-color: #2ECC71;
+    color: #252525;
+    border: #252525 solid 3px;
+}
+
+.send {
+    background-color: #252525;
+    border: #252525 solid 3px;
+    color: white;
+}
+
+.send:hover {
+    background-color: white;
+    color: #252525;
+    border: #252525 solid 3px;
+}
+
+.news {
+    height: 47px;
+    background-color: white;
+    border-radius: 10px;
+    color: #2ECC71;
+    border: 3px #2ECC71 solid;
+    width: 255px;
+}
+
+.news:hover {
+    background-color: #2ECC71;
+    color: white;
+    border: 3px #2ECC71 solid;
 }
 
 /*
