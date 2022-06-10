@@ -100,7 +100,7 @@ nav {
 @media screen  and (max-width: 575px){
     .navbar-brand img {
         width: 146px;
-        height: 39px;
+        /* height: 39px; */
     }
 }
 
